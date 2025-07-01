@@ -36,7 +36,6 @@ def ordenar_por_promedio() -> None:
     """
     Ordena las listas de estudiantes y calificaciones de mayor a menor según el promedio general.
     """
-    print("\nOrdenando por promedio general...")
     promedios = calcular_promedios()
     for i in range(len(estudiantes) - 1):
         for j in range(i + 1, len(estudiantes)):
@@ -54,7 +53,7 @@ def ordenar_por_promedio() -> None:
                 promedios[i] = promedios[j]
                 promedios[j] = temp_prom
 
-    print("Estudiantes ordenados por promedio:")
+    print("\nEstudiantes ordenados por promedio:")
     for i in range(len(estudiantes)):
         print(estudiantes[i], "-> Promedio:", promedios[i], "->", notas[i])
 
